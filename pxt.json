@@ -1,15 +1,17 @@
 {
     "name": "advanced-audio",
-    "description": "",
+    "description": "A MakeCode extension for advanced PCM-16 direct access with microphone",
     "dependencies": {
         "core": "*",
-        "radio": "*",
         "microphone": "*"
     },
     "files": [
-        "main.blocks",
-        "main.ts",
+        "shims.d.ts",
         "README.md"
+    ],
+    "filesCpp": [
+        "cpp/shims.cpp",
+        "cpp/advancedAudio.h"
     ],
     "testFiles": [
         "test.ts"
@@ -21,5 +23,5 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "blocksprj"
+    "preferredEditor": "tsprj"
 }
